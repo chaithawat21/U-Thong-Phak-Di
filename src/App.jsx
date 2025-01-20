@@ -24,8 +24,8 @@ function App() {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <header className="bg-blue-600 h-[20rem] text-white text-center p-8 bg-[url('./assets/images/house_afternoon_03.jpg')] bg-cover bg-no-repeat bg-center">
-        <h1 className="text-[10rem] font-bold ">อู่ทองพักดี</h1>
+      <header className="bg-blue-600 h-[35rem] text-white text-center p-8 bg-[url('./assets/images/house_afternoon_03.jpg')] bg-cover bg-no-repeat bg-center">
+        <h1 className="text-[5rem] font-bold ">อู่ทองพักดี</h1>
         <p className="text-[2rem] mt-2">ที่พักในบรรยากาศเงียบสงบ</p>
       </header>
 
