@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Footer from "./compoents/Footer";
+import Header from "./compoents/Header";
+import GoogleForm from "./compoents/GoogleForm";
+import Cards from "./compoents/Cards";
 
 function App() {
   const [room, setRoom] = useState("");
@@ -24,13 +28,10 @@ function App() {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <header className="bg-blue-600 h-[35rem] text-white text-center p-8 bg-[url('./assets/images/house_afternoon_03.jpg')] bg-cover bg-no-repeat bg-center">
-        <h1 className="text-[5rem] font-bold ">อู่ทองพักดี</h1>
-        <p className="text-[2rem] mt-2">ที่พักในบรรยากาศเงียบสงบ</p>
-      </header>
+      <Header/>
 
-      <main className="p-8">
-        <section className="mb-8">
+      <main className="p-8 flex flex-col items-center">
+        {/* <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">ประเภทที่พัก</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -68,9 +69,10 @@ function App() {
             </div>
           </div>
           
-        </section>
+        </section> */}
+        <Cards className=""/>
 
-        <section id="booking-form" className="bg-white p-8 rounded-lg shadow-lg">
+        {/* <section id="booking-form" className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-6">แบบฟอร์มการจอง</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -141,12 +143,11 @@ function App() {
               ตกลง
             </button>
           </form>
-        </section>
+        </section> */}
+        <GoogleForm/>
       </main>
 
-      <footer className="bg-gray-800 text-white text-center p-4">
-        <p>&copy; 2025 U Thong Phak Di Booking. All rights reserved.</p>
-      </footer>
+      <Footer/>
     </div>
   );
 }
